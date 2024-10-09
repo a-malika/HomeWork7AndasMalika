@@ -13,6 +13,10 @@ namespace HomeWork7
         {
             this.paymentStrategy = paymentStrategy;
         }
+        public void SetPaymentMethod(IPaymentStrategy paymentStrategy)
+        {
+            this.paymentStrategy = paymentStrategy;
+        }
         public void Pay(double cost)
         {
             paymentStrategy.Pay(cost);
